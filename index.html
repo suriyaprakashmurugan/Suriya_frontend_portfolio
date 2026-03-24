@@ -106,9 +106,9 @@
                     <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-[1.1] text-slate-900 dark:text-white transition-colors">
                         Suriyaprakash <span class="text-shimmer inline-block">M</span>
                     </h1>
-                    <div class="h-10">
-                        <p class="font-headline text-2xl md:text-3xl lg:text-4xl text-slate-700 dark:text-on-surface-variant font-medium reveal reveal-delay-1 flex items-center gap-2">
-                            I build <span class="text-primary font-bold animate-pulse">fast</span> stuff.
+                    <div class="h-20 lg:h-10 mt-2">
+                        <p class="font-headline text-2xl md:text-3xl lg:text-3xl text-slate-700 dark:text-on-surface-variant font-medium reveal reveal-delay-1 flex flex-wrap items-center gap-x-2">
+                            I turn slow React apps into <span class="text-primary font-bold">90+</span> Lighthouse scores.
                         </p>
                     </div>
                 </div>
@@ -124,16 +124,34 @@
             </div>
 
             <!-- Creative Hero Abstract Element -->
-            <div class="lg:col-span-5 hidden lg:flex justify-center relative reveal reveal-delay-2 parallax h-full items-center" data-speed="0.08">
-                <div class="w-full max-w-md aspect-square glass-card rounded-[3rem] flex items-center justify-center overflow-hidden animate-float relative bg-gradient-to-br from-primary/10 to-secondary/5 rotate-3 hover:rotate-0 transition-transform duration-700 group tilt-card">
-                    <div class="absolute inset-0 hero-gradient opacity-40"></div>
-                    
-                    <!-- 3D Abstract Elements -->
-                    <div class="absolute w-40 h-40 rounded-full border border-primary/40 dark:border-primary/30 top-10 left-10 parallax shadow-[0_0_50px_rgba(207,189,255,0.2)]" data-speed="0.12"></div>
-                    <div class="absolute w-28 h-28 rounded-[2rem] border-2 border-secondary/40 dark:border-secondary/30 bottom-16 right-12 rotate-45 parallax backdrop-blur-sm bg-white/10 dark:bg-black/10 shadow-[0_0_50px_rgba(162,231,255,0.2)]" data-speed="-0.15"></div>
-                    <div class="absolute w-16 h-16 rounded-full border-4 border-tertiary/40 dark:border-tertiary/30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 parallax" data-speed="0.05"></div>
-                    
-                    <span class="material-symbols-outlined text-9xl text-slate-800/10 dark:text-primary/20 z-10 transition-colors" style="font-variation-settings: 'FILL' 0;">code_blocks</span>
+            <div class="lg:col-span-5 hidden lg:flex justify-center relative reveal reveal-delay-2 h-full items-center">
+                <div class="w-full max-w-lg glass-card rounded-[1.5rem] flex flex-col overflow-hidden animate-float relative bg-[#1e1e1e] dark:bg-[#0d1117] rotate-2 hover:rotate-0 transition-transform duration-700 shadow-2xl border border-slate-700/50 tilt-card">
+                    <!-- Window Controls -->
+                    <div class="bg-[#2d2f34] dark:bg-[#161b22] px-4 py-3 flex items-center gap-2 border-b border-slate-700/50">
+                        <div class="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
+                        <div class="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
+                        <div class="w-3 h-3 rounded-full bg-[#27c93f]"></div>
+                        <span class="ml-4 text-xs font-mono text-slate-400">layout.tsx — Next.js</span>
+                    </div>
+                    <!-- Code Editor Content -->
+                    <div class="p-6 font-mono text-xs md:text-sm leading-relaxed text-slate-300 overflow-x-auto text-left">
+                        <div class="flex"><span class="text-slate-500 w-6">1</span> <span class="text-[#c678dd]">import</span> <span class="text-white">{</span> <span class="text-[#e5c07b]">Metadata</span> <span class="text-white">}</span> <span class="text-[#c678dd]">from</span> <span class="text-[#98c379]">'next'</span><span class="text-slate-400">;</span></div>
+                        <div class="flex"><span class="text-slate-500 w-6">2</span> </div>
+                        <div class="flex"><span class="text-slate-500 w-6">3</span> <span class="text-[#c678dd]">export</span> <span class="text-[#56b6c2]">const</span> <span class="text-[#e5c07b]">metadata</span><span class="text-white">:</span> <span class="text-[#e5c07b]">Metadata</span> <span class="text-[#56b6c2]">=</span> <span class="text-white">{</span></div>
+                        <div class="flex"><span class="text-slate-500 w-6">4</span>   <span class="text-white ml-4">title</span><span class="text-white">:</span> <span class="text-[#98c379]">'Suriyaprakash M | Portfolio'</span><span class="text-slate-400">,</span></div>
+                        <div class="flex"><span class="text-slate-500 w-6">5</span>   <span class="text-white ml-4">description</span><span class="text-white">:</span> <span class="text-[#98c379]">'High-performance Next.js architectures'</span><span class="text-slate-400">,</span></div>
+                        <div class="flex"><span class="text-slate-500 w-6">6</span> <span class="text-white">}</span><span class="text-slate-400">;</span></div>
+                        <div class="flex"><span class="text-slate-500 w-6">7</span> </div>
+                        <div class="flex"><span class="text-slate-500 w-6">8</span> <span class="text-[#c678dd]">export default</span> <span class="text-[#c678dd]">function</span> <span class="text-[#61afef]">RootLayout</span><span class="text-white">({</span> <span class="text-[#e06c75]">children</span> <span class="text-white">}) {</span></div>
+                        <div class="flex"><span class="text-slate-500 w-6">9</span>   <span class="text-[#c678dd]">return</span> <span class="text-white">(</span></div>
+                        <div class="flex whitespace-pre"><span class="text-slate-500 w-6">10</span>     <span class="text-[#e06c75]">&lt;html</span> <span class="text-[#d19a66]">lang</span><span class="text-[#56b6c2]">=</span><span class="text-[#98c379]"">"en"</span><span class="text-[#e06c75]">&gt;</span></div>
+                        <div class="flex whitespace-pre"><span class="text-slate-500 w-6">11</span>       <span class="text-[#e06c75]">&lt;body</span> <span class="text-[#d19a66]">className</span><span class="text-[#56b6c2]">=</span><span class="text-[#98c379]"">"antialiased"</span><span class="text-[#e06c75]">&gt;</span></div>
+                        <div class="flex whitespace-pre"><span class="text-slate-500 w-6">12</span>         <span class="text-white">{</span><span class="text-[#e06c75]">children</span><span class="text-white">}</span></div>
+                        <div class="flex whitespace-pre"><span class="text-slate-500 w-6">13</span>       <span class="text-[#e06c75]">&lt;/body&gt;</span></div>
+                        <div class="flex whitespace-pre"><span class="text-slate-500 w-6">14</span>     <span class="text-[#e06c75]">&lt;/html&gt;</span></div>
+                        <div class="flex"><span class="text-slate-500 w-6">15</span>   <span class="text-white">);</span></div>
+                        <div class="flex"><span class="text-slate-500 w-6">16</span> <span class="text-white">}</span></div>
+                    </div>
                 </div>
                 
                 <!-- Floating Terminal Badge -->
@@ -148,6 +166,28 @@
                 </div>
             </div>
             
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="py-12 bg-white dark:bg-surface relative border-y border-slate-200 dark:border-outline-variant/10 transition-colors z-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-outline-variant/20">
+                <div class="reveal py-4">
+                    <h4 class="text-slate-900 dark:text-white font-extrabold text-5xl md:text-6xl transition-colors">25%</h4>
+                    <p class="text-[11px] md:text-xs mt-3 uppercase font-bold tracking-widest text-slate-500 dark:text-outline transition-colors">Speed Increase</p>
+                </div>
+                <div class="reveal reveal-delay-1 py-4">
+                    <h4 class="text-slate-900 dark:text-white font-extrabold text-5xl md:text-6xl transition-colors text-[#6200ee] dark:text-[#a2e7ff]">90+</h4>
+                    <p class="text-[11px] md:text-xs mt-3 uppercase font-bold tracking-widest text-[#27c93f] dark:text-[#27c93f] transition-colors flex items-center justify-center gap-1">
+                        <span class="material-symbols-outlined text-[14px]">bolt</span> Lighthouse Score
+                    </p>
+                </div>
+                <div class="reveal reveal-delay-2 py-4">
+                    <h4 class="text-slate-900 dark:text-white font-extrabold text-5xl md:text-6xl transition-colors">-40%</h4>
+                    <p class="text-[11px] md:text-xs mt-3 uppercase font-bold tracking-widest text-slate-500 dark:text-outline transition-colors">Crash Reductions</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -168,20 +208,6 @@
                     <p>
                         My journey is fueled by a relentless drive for performance optimization and scalable architecture. I believe that a great UI is more than just aesthetics; it's about creating intuitive interfaces that solve real-world problems natively and responsively.
                     </p>
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-8 pt-8">
-                        <div class="reveal reveal-delay-1 glass-card p-6 rounded-2xl text-center">
-                            <h4 class="text-slate-900 dark:text-white font-extrabold text-4xl md:text-5xl transition-colors">25%</h4>
-                            <p class="text-[10px] md:text-xs mt-3 uppercase font-bold tracking-widest text-slate-500 dark:text-outline transition-colors">Page Speed Inc.</p>
-                        </div>
-                        <div class="reveal reveal-delay-2 glass-card p-6 rounded-2xl text-center">
-                            <h4 class="text-slate-900 dark:text-white font-extrabold text-4xl md:text-5xl transition-colors">90+</h4>
-                            <p class="text-[10px] md:text-xs mt-3 uppercase font-bold tracking-widest text-slate-500 dark:text-outline transition-colors">Lighthouse</p>
-                        </div>
-                        <div class="reveal reveal-delay-3 glass-card p-6 rounded-2xl text-center col-span-2 md:col-span-1">
-                            <h4 class="text-slate-900 dark:text-white font-extrabold text-4xl md:text-5xl transition-colors">-40%</h4>
-                            <p class="text-[10px] md:text-xs mt-3 uppercase font-bold tracking-widest text-slate-500 dark:text-outline transition-colors">Crash Reductions</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -222,21 +248,23 @@
 
                 <!-- Skill 3 (Square Bento) -->
                 <div class="md:col-span-1 md:row-span-1 glass-card p-6 md:p-8 rounded-[2rem] border-slate-200 dark:border-outline-variant/10 hover:border-tertiary/40 transition-colors group reveal reveal-delay-2 flex flex-col justify-between tilt-card bg-gradient-to-br from-transparent to-tertiary/10 dark:to-tertiary/5 cursor-default mt-6 md:mt-0">
-                    <div class="w-12 h-12 rounded-2xl bg-tertiary/20 dark:bg-tertiary/10 flex items-center justify-center mb-8 shadow-inner">
+                    <div class="w-12 h-12 rounded-2xl bg-tertiary/20 dark:bg-tertiary/10 flex items-center justify-center mb-6 shadow-inner">
                         <span class="material-symbols-outlined text-orange-600 dark:text-tertiary">palette</span>
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold font-headline text-slate-900 dark:text-white group-hover:text-orange-600 dark:group-hover:text-tertiary transition-colors">Tailwind CSS</h3>
+                        <h3 class="text-lg font-bold font-headline text-slate-900 dark:text-white group-hover:text-orange-600 dark:group-hover:text-tertiary transition-colors mb-2">Tailwind CSS</h3>
+                        <p class="text-xs text-slate-600 dark:text-on-surface-variant leading-relaxed">Utility-first styling ensuring highly consistent and robust design systems.</p>
                     </div>
                 </div>
 
                 <!-- Skill 4 (Square Bento) -->
-                <div class="md:col-span-1 md:row-span-1 glass-card p-6 md:p-8 rounded-[2rem] border-slate-200 dark:border-outline-variant/10 hover:border-[#cfbdff]/40 transition-colors group reveal reveal-delay-3 flex flex-col justify-between tilt-card bg-gradient-to-br from-transparent to-[#cfbdff]/20 dark:to-[#cfbdff]/5 cursor-default">
-                    <div class="w-12 h-12 rounded-2xl bg-[#cfbdff]/40 dark:bg-[#cfbdff]/10 flex items-center justify-center mb-8 shadow-inner">
+                <div class="md:col-span-1 md:row-span-1 glass-card p-6 md:p-8 rounded-[2rem] border-slate-200 dark:border-outline-variant/10 hover:border-[#cfbdff]/40 transition-colors group reveal reveal-delay-3 flex flex-col justify-between tilt-card bg-gradient-to-br from-transparent to-[#cfbdff]/20 dark:to-[#cfbdff]/5 cursor-default mt-6 md:mt-0">
+                    <div class="w-12 h-12 rounded-2xl bg-[#cfbdff]/40 dark:bg-[#cfbdff]/10 flex items-center justify-center mb-6 shadow-inner">
                         <span class="material-symbols-outlined text-[#6200ee] dark:text-[#cfbdff]">api</span>
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold font-headline text-slate-900 dark:text-white group-hover:text-[#6200ee] dark:group-hover:text-[#cfbdff] transition-colors">REST APIs</h3>
+                        <h3 class="text-lg font-bold font-headline text-slate-900 dark:text-white group-hover:text-[#6200ee] dark:group-hover:text-[#cfbdff] transition-colors mb-2">REST APIs</h3>
+                        <p class="text-xs text-slate-600 dark:text-on-surface-variant leading-relaxed">Designing robust endpoints with standardized response architectures.</p>
                     </div>
                 </div>
             </div>
@@ -257,16 +285,11 @@
             <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
                 <!-- Project 1 -->
                 <div class="group relative bg-white dark:bg-surface-container-highest rounded-[2rem] overflow-hidden flex flex-col transition-colors border border-slate-200 dark:border-outline-variant/10 shadow-xl dark:shadow-none hover:border-[#6200ee]/30 dark:hover:border-primary/30 tilt-card reveal reveal-delay-1">
-                    <div class="aspect-video relative overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-surface dark:to-surface-container">
-                        <div class="p-8 w-full h-full flex flex-col relative z-20">
-                            <div class="h-6 w-full bg-slate-50 dark:bg-surface-container-highest rounded-lg border border-slate-300 dark:border-outline/20 mb-4 flex items-center px-4 gap-2 drop-shadow-sm">
-                                <div class="w-2.5 h-2.5 rounded-full bg-red-400"></div><div class="w-2.5 h-2.5 rounded-full bg-yellow-400"></div><div class="w-2.5 h-2.5 rounded-full bg-green-400"></div>
-                            </div>
-                            <div class="flex-grow bg-[#cfbdff]/20 dark:bg-primary/10 rounded-xl border border-[#cfbdff]/50 dark:border-primary/20 backdrop-blur-sm"></div>
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-white dark:from-surface-container-highest via-transparent to-transparent opacity-100 z-30"></div>
+                    <div class="aspect-video relative overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-surface dark:to-surface-container group-hover:scale-[1.02] transition-transform duration-500">
+                        <img src="real_estate_mockup.png" alt="Real Estate Mockup" class="w-full h-full object-cover relative z-10" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-white dark:from-surface-container-highest via-transparent to-transparent opacity-100 z-30 pointer-events-none"></div>
                     </div>
-                    <div class="p-8 md:p-10 flex flex-col flex-grow relative z-40 bg-white dark:bg-transparent">
+                    <div class="p-8 md:p-10 flex flex-col flex-grow relative z-40 bg-white dark:bg-transparent -mt-10">
                         <div class="flex flex-wrap gap-2 mb-6">
                             <span class="text-[10px] px-2.5 py-1 bg-[#cfbdff]/30 dark:bg-primary/10 text-[#6200ee] dark:text-primary font-bold rounded-lg uppercase tracking-widest">NEXT.JS</span>
                             <span class="text-[10px] px-2.5 py-1 bg-[#a2e7ff]/30 dark:bg-secondary/10 text-sky-700 dark:text-secondary font-bold rounded-lg uppercase tracking-widest">TAILWIND CSS</span>
@@ -277,7 +300,7 @@
                         </p>
                         <div class="flex gap-4 mt-auto">
                             <a class="flex items-center gap-2 text-sm font-bold text-[#6200ee] dark:text-secondary hover:opacity-70 transition-opacity uppercase tracking-widest" href="#">
-                                <span class="material-symbols-outlined text-lg">open_in_new</span> View Project
+                                <span class="material-symbols-outlined text-lg">open_in_new</span> Case Study
                             </a>
                         </div>
                     </div>
@@ -285,17 +308,11 @@
 
                 <!-- Project 2 -->
                 <div class="group relative bg-white dark:bg-surface-container-highest rounded-[2rem] overflow-hidden flex flex-col transition-colors border border-slate-200 dark:border-outline-variant/10 shadow-xl dark:shadow-none hover:border-[#00d2fd]/30 dark:hover:border-secondary/30 tilt-card reveal reveal-delay-2 mt-8 lg:mt-0">
-                    <div class="aspect-video relative overflow-hidden bg-gradient-to-bl from-slate-100 to-slate-200 dark:from-surface dark:to-surface-container">
-                        <div class="p-8 w-full h-full grid grid-cols-2 gap-6 relative z-20">
-                             <div class="bg-[#a2e7ff]/20 dark:bg-secondary/10 rounded-xl border border-[#a2e7ff]/50 dark:border-secondary/20 w-full h-full backdrop-blur-sm"></div>
-                             <div class="flex flex-col gap-6">
-                                 <div class="bg-slate-50 dark:bg-surface-container-highest rounded-xl border border-slate-300 dark:border-outline/20 flex-grow drop-shadow-sm"></div>
-                                 <div class="bg-slate-50 dark:bg-surface-container-highest rounded-xl border border-slate-300 dark:border-outline/20 flex-grow drop-shadow-sm"></div>
-                             </div>
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-white dark:from-surface-container-highest via-transparent to-transparent opacity-100 z-30"></div>
+                    <div class="aspect-video relative overflow-hidden bg-gradient-to-bl from-slate-100 to-slate-200 dark:from-surface dark:to-surface-container group-hover:scale-[1.02] transition-transform duration-500">
+                        <img src="alumni_platform_mockup.png" alt="Alumni Platform Mockup" class="w-full h-full object-cover relative z-10" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-white dark:from-surface-container-highest via-transparent to-transparent opacity-100 z-30 pointer-events-none"></div>
                     </div>
-                    <div class="p-8 md:p-10 flex flex-col flex-grow relative z-40 bg-white dark:bg-transparent">
+                    <div class="p-8 md:p-10 flex flex-col flex-grow relative z-40 bg-white dark:bg-transparent -mt-10">
                         <div class="flex flex-wrap gap-2 mb-6">
                             <span class="text-[10px] px-2.5 py-1 bg-orange-100 dark:bg-tertiary/10 text-orange-700 dark:text-tertiary font-bold rounded-lg uppercase tracking-widest">REACT HOOKS</span>
                             <span class="text-[10px] px-2.5 py-1 bg-[#cfbdff]/30 dark:bg-primary/10 text-[#6200ee] dark:text-primary font-bold rounded-lg uppercase tracking-widest">REST API</span>
@@ -306,7 +323,7 @@
                         </p>
                         <div class="flex gap-4 mt-auto">
                             <a class="flex items-center gap-2 text-sm font-bold text-[#6200ee] dark:text-secondary hover:opacity-70 transition-opacity uppercase tracking-widest" href="#">
-                                <span class="material-symbols-outlined text-lg">open_in_new</span> View Case Study
+                                <span class="material-symbols-outlined text-lg">open_in_new</span> Case Study
                             </a>
                         </div>
                     </div>
@@ -349,7 +366,7 @@
                             <h3 class="text-2xl font-bold font-headline text-slate-900 dark:text-white transition-colors">Frontend Engineer</h3>
                             <p class="text-slate-500 dark:text-outline font-bold text-lg transition-colors">Cornerstohn Solutions</p>
                         </div>
-                        <span class="text-xs font-label text-slate-500 dark:text-outline bg-slate-200 dark:bg-surface-container px-4 py-1.5 rounded-full h-fit uppercase tracking-widest font-bold">Previous</span>
+                        <span class="text-xs font-label text-slate-500 dark:text-outline bg-slate-200 dark:bg-surface-container px-4 py-1.5 rounded-full h-fit uppercase tracking-widest font-bold">Jun 2021 - Sep 2023</span>
                     </div>
                     <ul class="space-y-4 text-slate-600 dark:text-on-surface-variant leading-relaxed text-base transition-colors">
                         <li class="flex gap-3"><span class="text-[#6200ee] dark:text-primary mt-1 material-symbols-outlined text-sm">chevron_right</span> Developed robust UI architectures using Next.js and React.js.</li>
@@ -375,7 +392,7 @@
                             <div class="w-14 h-14 rounded-full bg-slate-100 dark:bg-surface-container-highest border border-transparent dark:border-outline-variant/30 flex items-center justify-center group-hover:bg-[#a2e7ff]/30 dark:group-hover:bg-secondary/20 transition-all shadow-inner dark:shadow-[0_0_15px_rgba(0,210,253,0.15)]">
                                 <span class="material-symbols-outlined text-[#00d2fd] dark:text-[#a2e7ff] text-2xl group-hover:dark:text-[#00d2fd] transition-colors">mail</span>
                             </div>
-                            <a href="mailto:www.msprakash237@gmail.com" class="font-bold text-lg">contact@suriya.dev</a>
+                            <a href="mailto:contact@suriya.dev" class="font-bold text-lg">contact@suriya.dev</a>
                         </div>
                         <div class="flex items-center gap-6 text-slate-700 dark:text-on-surface hover:text-[#00d2fd] dark:hover:text-[#00d2fd] transition-colors cursor-pointer group">
                             <div class="w-14 h-14 rounded-full bg-slate-100 dark:bg-surface-container-highest border border-transparent dark:border-outline-variant/30 flex items-center justify-center group-hover:bg-[#a2e7ff]/30 dark:group-hover:bg-secondary/20 transition-all shadow-inner dark:shadow-[0_0_15px_rgba(0,210,253,0.15)]">
@@ -419,6 +436,37 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-50 dark:bg-surface border-t border-slate-200 dark:border-outline-variant/10 transition-colors">
+        <div class="container mx-auto px-6 max-w-7xl flex flex-col md:flex-row items-center justify-between gap-6">
+            
+            <div class="flex items-center gap-4 order-2 md:order-1">
+                <!-- Lighthouse Badge -->
+                <div class="flex items-center gap-2 bg-white dark:bg-surface-container px-3 py-1.5 rounded-full border border-slate-200 dark:border-outline-variant/30 shadow-sm">
+                    <div class="flex gap-[2px]">
+                        <div class="w-2.5 h-2.5 rounded-full bg-[#00cc66]"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-[#00cc66]"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-[#00cc66]"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-[#00cc66]"></div>
+                    </div>
+                    <span class="text-xs font-bold text-[#00cc66] tracking-wider">100</span>
+                </div>
+                
+                <p class="text-sm font-medium text-slate-500 dark:text-outline">
+                    Built with Next.js App Router
+                </p>
+            </div>
+
+            <!-- Page Load Time Script element -->
+            <div class="order-1 md:order-2">
+                <p class="text-xs font-mono text-slate-400 dark:text-outline-variant tracking-wider bg-slate-100 dark:bg-surface-container-high px-3 py-1.5 rounded-md">
+                    Rendered in <span id="load-time" class="text-[#6200ee] dark:text-primary font-bold transition-all duration-300">...</span>
+                </p>
+            </div>
+            
+        </div>
+    </footer>
 </main>
 
 <script src="script.js"></script>
